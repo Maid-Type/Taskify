@@ -1,0 +1,58 @@
+.container {
+    background-color: white;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 2px solid black;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.logoContainer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logoImg {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+.list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    gap: 5vh;
+}
+
+.icon {
+    width: 75px;
+    /*padding: 1rem;*/
+    transition: all 0.5s ease;
+}
+
+.icon:not(.active):hover {
+    transform: scale(1.3);
+    cursor:pointer;
+}
+
+.active {
+    scale: 1.3;
+    cursor:pointer;
+}

@@ -1,0 +1,43 @@
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*position: absolute;*/
+    /*left: 15%;*/
+    /*top: 5%;*/
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 2px solid black;
+    padding: 0 12rem;
+}
+
+.mainUl {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 1rem;
+    gap: 2rem;
+}
+
+.item {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.25s ease;
+    padding: 0.5rem;
+}
+
+.item:hover {
+    background-color: black;
+    color: white;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}

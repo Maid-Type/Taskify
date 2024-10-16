@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root,html,body {
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0f8ff; /* Light initial color */
+    animation: subtleBackground 30s ease infinite;
+    position: relative;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* height: 100%; */
+}
+
+@keyframes subtleBackground {
+    0% {
+        background-color: #f0f8ff; /* AliceBlue */
+    }
+    50% {
+        background-color: #f5fffa; /* MintCream */
+    }
+    100% {
+        background-color: #f0f8ff; /* AliceBlue */
+    }
+}
