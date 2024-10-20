@@ -8,7 +8,7 @@ function SideBar() {
             <div className={styles.container}>
                 <div className={styles.logoContainer}>
                     <NavLink className={styles.logo} to='/app'>
-                        <img src={"/src/assets/logo.png"} alt="Site Logo" className={styles.logoImg}/>
+                        <img src={"/assets/logo.png"} alt="Site Logo" className={styles.logoImg}/>
                     </NavLink>
                 </div>
 
