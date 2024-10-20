@@ -21,10 +21,10 @@ function SideBar() {
                             <SideBarItem name='confirmed' to='confirmed-tasks'></SideBarItem>
                         </li>
                         <li>
-                            <SideBarItem name='canceled' to='homepage'></SideBarItem>
+                            <SideBarItem name='canceled' to='cancelled-tasks'></SideBarItem>
                         </li>
                         <li>
-                            <SideBarItem name='search' to='homepage'></SideBarItem>
+                            <SideBarItem name='search' to='search-tasks'></SideBarItem>
                         </li>
                         {/*<li>*/}
                         {/*    <SideBarItem name='connected' to='homepage'></SideBarItem>*/}

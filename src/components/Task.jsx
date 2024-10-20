@@ -28,10 +28,21 @@ const reducer = (state, action) => {
             return state;
         }
         case 'deleteComment': {
-            const updatedComments = [...state.taskComments].splice(action.index, 1);
-            sessionStorage.setItem('tasks', JSON.stringify(updatedComments));
+            const updatedComments = state.taskComments.filter((_, index) => index !== action.payload);
+            console.log(updatedComments);
+
+            const data = JSON.parse(sessionStorage.getItem('tasks'));
+            const updatedArray = data.map((item) => {
+                if (item.taskID === state.taskID) {
+                    return { ...item, comments: updatedComments };
+                }
+                return item;
+            });
+
+            sessionStorage.setItem('tasks', JSON.stringify(updatedArray));
             return { ...state, taskComments: updatedComments };
         }
+
         case 'startEditingComment':
             return { ...state, isEditingComment: true,isCommentsVisible: true };
         case 'resetState':
@@ -41,7 +52,7 @@ const reducer = (state, action) => {
     }
 };
 
-function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true }) {
+function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true,handleTaskDeleted,statusIsVisible = false ,handleRestoreTask}) {
     const [state, dispatch] = useReducer(reducer, task);
     const [prevTask, setPrevTask] = useState(task);
     const [comment, setComment] = useState('');
@@ -53,6 +64,12 @@ function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true 
             setPrevTask(task);
         }
     }, [task]);
+
+    useEffect(() => {
+        const dataArray = JSON.parse(sessionStorage.getItem('tasks'));
+        const finalArr = dataArray.map((item) => item.taskID === state.taskID ? {...state,isOptionsVisible: false,isEditingTasksVisible: false,isEditingComment: false} : item);
+        sessionStorage.setItem('tasks', JSON.stringify(finalArr));
+    }, [state]);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -109,10 +126,11 @@ function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true 
     };
 
     const handleDeleteComment = (index) => {
-        dispatch({ type: 'deleteComment', index });
+        dispatch({ type: 'deleteComment', payload:index });
     };
 
     return (
+        <>
         <div className={`${styles.container} ${(state.isCommentsVisible && state.taskComments.length > 0) ? styles.extended : ''}`} key={state.taskID}>
             <div className={styles.element}>
                 {state.isOptionsVisible && (
@@ -121,7 +139,7 @@ function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true 
                             <li onClick={() => dispatch({ type: 'editTask' })}>
                                 <p>Edit Task</p>
                             </li>
-                            <li onClick={() => handleTaskCompleted(state.taskID)}>
+                            <li onClick={() => handleTaskDeleted(state.taskID)}>
                                 <p>Delete Task</p>
                             </li>
                             <li onClick={() => dispatch({ type: 'startEditingComment' })}>
@@ -146,7 +164,7 @@ function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true 
                         ) : (
                             <h2>{state.taskPriority} Task</h2>
                         )}
-                        {shouldBeEdited && (<div
+                        {shouldBeEdited && state.isTaskDeleted === false && state.isTaskCompleted === false && (<div
                             onClick={() => dispatch({type: 'showOptions'})}
                             className={`${styles.options} ${state.isOptionsVisible ? styles.active : ''}`}
                         >
@@ -187,13 +205,23 @@ function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true 
                                 placeholder='Input your task!'
                                 value={state.taskDescription}
                                 onChange={(e) => dispatch({ type: 'editTaskDescription', payload: e.target.value })}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter') {
+                                        if (state.taskDescription.length > 3) {
+                                            dispatch({type: 'hideOptions'});
+                                        } else {
+                                            alert('Please input a valid task name!');
+                                        }
+                                    }
+                                }}
                             />
                         ) : (
                             <>
                                 <p>{state.taskDescription}</p>
-                                <button className={styles.button} onClick={() => {
-                                    handleTaskCompleted(state.taskID)
-                                }}>✅</button>
+                                {state.isTaskCompleted === false && state.isTaskDeleted === false && (
+                                    <button className={styles.button} onClick={() => {
+                                        handleTaskCompleted(state.taskID)
+                                    }}>✅</button>)}
                             </>
                         )}
                     </main>
@@ -233,6 +261,8 @@ function Task({ task,handleTaskCompleted,handleTaskChange,shouldBeEdited = true 
                 </footer>
             </div>
         </div>
+            {statusIsVisible && (task.isTaskDeleted === true || task.isTaskCompleted === true) && (<div className={styles.taskStatus}>{(task.isTaskDeleted && <p>Task is Deleted!</p>) || (task.isTaskCompleted && <p>Task is Completed!</p>)} <button onClick={() => handleRestoreTask(state)}>Restore task?</button></div>)}
+        </>
     );
 }
 

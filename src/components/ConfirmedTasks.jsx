@@ -39,7 +39,7 @@ function ConfirmedTasks() {
     }, []);
 
 
-    function removeCompletedTask(task) {
+    function removeTask(task) {
         const fullArr = JSON.parse(sessionStorage.getItem("tasks")) || [];
         const updatedArr = fullArr.filter((t) => t.taskID !== task.taskID);
 
@@ -86,7 +86,7 @@ function ConfirmedTasks() {
                     <button onClick={handleClearAllTasks}>Clear All Tasks ❌</button>
                 </div>
                 {state.filteredTasksArr.length > 0 ? (<Table isHeaderVisible={isHeaderVisible} tasks={state.filteredTasksArr}
-                                                             removeCompletedTask={removeCompletedTask}></Table>) : (
+                                                             removeTask={removeTask}></Table>) : (
                                                                  <div className={styles.noTasksCompleted}><p>No Tasks Are Completed Yet! 📑</p></div>
                 )}
 

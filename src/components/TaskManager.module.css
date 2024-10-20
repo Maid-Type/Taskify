@@ -1,7 +1,6 @@
 .parent {
     background-color: white;
     display: grid;
-    margin: 2rem 0;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto); /* Each row is 25vh */
     gap: 32px;
@@ -10,19 +9,8 @@
     box-shadow: -2px 5px 10px 5px rgba(0, 0, 0, 0.09);
     border-radius: 15px;
     padding: 1rem;
-}
-
-.parent > Task {
-    position: relative;
-    grid-row: span 1 / span 1; /* Default size */
-    text-align: center;
-    height: auto;
-    width: 100%;
-    background-color: #f4f9fc;
-    border-radius: 15px;
-    padding: 1rem;
-    box-shadow: -2px 5px 15px 10px rgba(175, 175, 175, 0.22);
-    transition: all 0.3s ease-in-out; /* Adding a transition for smooth height change */
+    margin: 2rem 0 2rem 2rem;
+    left: -0%;
 }
 
 .emptyTasks {
@@ -75,13 +63,11 @@
 
 .show {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     height: 100%;
     width: 100%;
     pointer-events: all;
     animation: showAdd 0.5s ease forwards;
+    overflow-y: auto;
 }
 
 .hide {
@@ -117,14 +103,19 @@
     }
 }
 
+@media screen and (max-width: 1250px) {
+
+}
+
 @media screen and (max-width: 1150px) {
     .parent {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .parent {
         grid-template-columns: repeat(1, 1fr);
+        width: 65%;
     }
 }

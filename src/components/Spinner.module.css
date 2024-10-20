@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,8 +12,8 @@
 .spinner {
     width: 10rem;
     height: 10rem;
-    border: 12px solid rgba(0, 0, 255, 0.2); /* Light blue */
-    border-top: 12px solid blue; /* Blue for the rotating part */
+    border: 12px solid rgba(0, 0, 255, 0.2);
+    border-top: 12px solid blue;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     position: absolute;

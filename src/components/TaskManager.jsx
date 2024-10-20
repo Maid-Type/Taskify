@@ -1,6 +1,5 @@
 import styles from './TaskManager.module.css';
 import Task from "./Task.jsx";
-// import API_URL from "/src/helpers.js";
 import { useEffect, useReducer, useState } from "react";
 import Spinner from "./Spinner.jsx";
 import AddTask from "./AddTask.jsx";
@@ -15,15 +14,13 @@ const initialState = {
 const reducer = function (state, action) {
         switch (action.type) {
                 case 'loadTasks':
-                        return { ...state, tasksArray: action.payload, isTaskArrEmpty: action.payload.filter((item) => item.isTaskCompleted === false).length === 0, error: null };
+                        return { ...state, tasksArray: action.payload, isTaskArrEmpty: action.payload.filter((item) => item.isTaskCompleted === false && item.isTaskDeleted === false).length === 0, error: null };
                 case 'isLoading':
                         return { ...state, isLoading: action.payload, isTaskArrEmpty: true, error: null };
                 case 'setTaskCompleted': {
                         const updatedArr = state.tasksArray.map((task) => task.taskID === action.payload ? {...task,isTaskCompleted: true} : task);
-                        console.log(updatedArr);
-                        console.log();
                         sessionStorage.setItem("tasks", JSON.stringify(updatedArr));
-                        return { ...state,tasksArray: updatedArr,isTaskArrEmpty: updatedArr.filter((item) => item.isTaskCompleted !== true).length === 0 };
+                        return { ...state,tasksArray: updatedArr,isTaskArrEmpty: updatedArr.filter((item) => item.isTaskCompleted === false && item.isTaskDeleted === false).length === 0 };
                 }
                 case 'handleAddTask': {
                         const newArr = [...state.tasksArray, action.payload];
@@ -60,6 +57,12 @@ export default function TaskManager() {
                 dispatch({ type: 'handleAddTask', payload: task });
         }
 
+        function handleTaskDeleted(id) {
+                const filteredArr = state.tasksArray.map((item) => item.taskID === id ? { ...item, isTaskDeleted: true } : item);
+                sessionStorage.setItem('tasks', JSON.stringify(filteredArr));
+                dispatch({type: 'loadTasks',payload: filteredArr});
+        }
+
         useEffect(() => {
                 const getData = async () => {
                         try {
@@ -85,11 +88,12 @@ export default function TaskManager() {
                                 {state.isTaskArrEmpty ? (
                                     <p className={styles.emptyTasks}>No tasks added! 📥</p>
                                 ) : (
-                                    state.tasksArray.filter((item) => item.isTaskCompleted === false).map((task) => (
+                                    state.tasksArray.filter((item) => item.isTaskCompleted === false && item.isTaskDeleted === false).map((task) => (
                                         <Task
                                             task={task}
                                             key={task.taskID}
                                             handleTaskCompleted={handleTaskCompleted}
+                                            handleTaskDeleted={handleTaskDeleted}
                                         />
                                     ))
                                 )}

@@ -1,0 +1,97 @@
+.container {
+    width: 20%;
+    padding: 1rem;
+    border: 2px solid rgba(190, 190, 190, 0.47);
+    border-radius: 8px;
+    background: rgb(2,0,36);
+    background: linear-gradient(145deg, rgb(234, 234, 255) 0%, rgb(238, 229, 229) 64%, rgb(238, 234, 234) 99%, rgba(217, 214, 214, 0.14) 100%);
+    transition: transform 1s ease;
+    box-shadow: -2px 1px 25px 1px rgba(0, 0, 0, 0.15); ;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search input {
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.suggestions {
+    margin-top: 3rem;
+    width: 35%;
+    border: 2px solid rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    box-shadow: -5px 10px 10px 2px rgba(0, 0, 0, 0.08);
+    height: 45vh;
+    opacity: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: opacity 0.3s ease-in-out;
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(154, 161, 161, 0.62) rgba(173, 216, 230, 0.16);
+    scrollbar-width: thin;
+    scrollbar-track-color: black;
+}
+
+.suggestions.show {
+    opacity: 1;
+}
+
+.suggestions ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.suggestions li {
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 1rem;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: font-size 0.5s ease;
+}
+
+.suggestions li:hover,
+.suggestions li:nth-child(even):hover {
+    background-color: #022249;
+    color: white;
+}
+
+.suggestions li:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+
+.suggestions li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.suggestions li:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: -2px 2px 2px rgba(173, 216, 230, 0.28);
+}

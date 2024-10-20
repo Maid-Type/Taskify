@@ -7,6 +7,8 @@
     border: 2px solid rgba(0, 0, 0, 0.18);
     height: auto;
     border-radius: 8px;
+    background-color: white;
+    box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.07);
 }
 
 .element {
@@ -48,6 +50,12 @@
     z-index: 3;
     border-radius: 15px;
     box-shadow: -2px 10px 10px 2px rgba(0, 0, 0, 0.11);
+}
+
+@media screen and (max-width: 750px) {
+    .taskOptions {
+        width: 25%;
+    }
 }
 
 .taskOptions ul {
@@ -217,4 +225,22 @@
 
 .extended {
     grid-row: span 2 / span 2;
+}
+
+.taskStatus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 105%;
+    padding: 1rem;
+}
+
+.taskStatus button {
+    font-size: 1.25rem;
 }

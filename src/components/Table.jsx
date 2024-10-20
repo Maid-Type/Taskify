@@ -20,7 +20,7 @@ const reducer = (state , action) => {
     }
 }
 
-function Table({tasks = [],isHeaderVisible,removeCompletedTask}) {
+function Table({tasks = [],isHeaderVisible,removeTask,bGcolor}) {
     const [state,dispatch] = useReducer(reducer,initialState);
     const [itemToSend,setItemToSend] = useState(null);
 
@@ -53,12 +53,12 @@ function Table({tasks = [],isHeaderVisible,removeCompletedTask}) {
                 <table className={state.seeComments ? `${styles.table} ${styles.visibleComments}` : styles.table}>
                     <thead className={styles.thead}>
                     <tr className={styles.tHeadtr}>
-                        <th>Task Description</th>
-                        <th>Task Priority</th>
-                        <th>Task Comments</th>
-                        <th>Task ID</th>
-                        <th>Task Status</th>
-                        <th></th>
+                        <th bgcolor={bGcolor}>Task Description</th>
+                        <th bgcolor={bGcolor}>Task Priority</th>
+                        <th bgcolor={bGcolor}>Task Comments</th>
+                        <th bgcolor={bGcolor}>Task ID</th>
+                        <th bgcolor={bGcolor}>Task Status</th>
+                        <th bgcolor={bGcolor}></th>
                     </tr>
                     </thead>
 
@@ -74,7 +74,7 @@ function Table({tasks = [],isHeaderVisible,removeCompletedTask}) {
                             <td>{task.taskID}</td>
                             <td>{task.isTaskCompleted ? 'Task Completed' : 'Task is Not Completed!'}</td>
                             <td>
-                                <button onClick={() => removeCompletedTask(task)}>❎</button>
+                                <button onClick={() => removeTask(task)}>❎</button>
                             </td>
                         </tr>
                     ))}

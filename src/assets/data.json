@@ -7,24 +7,24 @@
       "isEditingTasksVisible": false,
       "isEditingComment": false,
       "isTaskCompleted": false,
+      "isTaskDeleted": true,
       "taskPriority": "Main",
       "taskDescription": "Prepare for the meeting",
       "taskComments": [
         "Gather materials",
         "Confirm attendance",
-        "Review agenda",
-        "Gather materials",
-        "Confirm attendance",
         "Review agenda"
       ],
-      "taskID": 1
+      "taskID": 7816
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": false,
+      "isEditingComment": false,
+      "isTaskCompleted": true,
+      "isTaskDeleted": false,
       "taskPriority": "Secondary",
       "taskDescription": "Complete the project report",
       "taskComments": [
@@ -32,14 +32,16 @@
         "Add data analysis",
         "Finalize conclusions"
       ],
-      "taskID": 2
+      "taskID": 3304
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
+      "isEditingComment": false,
       "isTaskCompleted": false,
+      "isTaskDeleted": false,
       "taskPriority": "Optional",
       "taskDescription": "Plan the team outing",
       "taskComments": [
@@ -47,14 +49,16 @@
         "Set a date",
         "Send out invitations"
       ],
-      "taskID": 3
+      "taskID": 6507
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
+      "isEditingComment": false,
       "isTaskCompleted": false,
+      "isTaskDeleted": false,
       "taskPriority": "Tertiary",
       "taskDescription": "Update the website",
       "taskComments": [
@@ -62,14 +66,16 @@
         "Fix broken links",
         "Improve SEO"
       ],
-      "taskID": 4
+      "taskID": 4869
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
+      "isEditingComment": false,
       "isTaskCompleted": true,
+      "isTaskDeleted": false,
       "taskPriority": "Main",
       "taskDescription": "Organize the office",
       "taskComments": [
@@ -77,14 +83,16 @@
         "Rearrange furniture",
         "Restock supplies"
       ],
-      "taskID": 5
+      "taskID": 7972
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
+      "isEditingComment": false,
       "isTaskCompleted": false,
+      "isTaskDeleted": false,
       "taskPriority": "Secondary",
       "taskDescription": "Conduct a training session",
       "taskComments": [
@@ -92,282 +100,602 @@
         "Schedule a time",
         "Send reminders"
       ],
-      "taskID": 6
+      "taskID": 1019
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
+      "isEditingComment": false,
       "isTaskCompleted": false,
+      "isTaskDeleted": true,
       "taskPriority": "Main",
-      "taskDescription": "Organize the office",
+      "taskDescription": "Update the software",
       "taskComments": [
-        "Declutter workspace",
-        "Rearrange furniture",
-        "Restock supplies"
+        "Check for updates",
+        "Backup data",
+        "Test new version"
       ],
-      "taskID": 7
+      "taskID": 1622
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Secondary",
-      "taskDescription": "Conduct a training session",
-      "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Send reminders"
-      ],
-      "taskID": 8
-    },
-    {
-      "isOptionsVisible": false,
-      "isCommentsVisible": false,
-      "isConnectedTasksVisible": false,
-      "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
       "taskPriority": "Optional",
-      "taskDescription": "Complete HomeWork",
+      "taskDescription": "Create a budget report",
       "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
+        "Collect expenses",
+        "Analyze budget",
+        "Prepare final report"
       ],
-      "taskID": 9
+      "taskID": 9150
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Host the workshop",
+      "taskComments": [
+        "Send invitations",
+        "Prepare materials",
+        "Set up the venue"
+      ],
+      "taskID": 8473
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": true,
+      "taskPriority": "Main",
+      "taskDescription": "Follow up on leads",
+      "taskComments": [
+        "Contact potential clients",
+        "Send follow-up emails",
+        "Document responses"
+      ],
+      "taskID": 5942
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
       "taskPriority": "Secondary",
-      "taskDescription": "Sort out Daily Tasks",
+      "taskDescription": "Prepare a progress report",
       "taskComments": [
-        "Schedule a time",
-        "Send reminders"
+        "Gather data",
+        "Analyze results",
+        "Write the report"
       ],
-      "taskID": 10
+      "taskID": 2438
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
-      "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
-      ],
-      "taskID": 11
-    },
-    {
-      "isOptionsVisible": false,
-      "isCommentsVisible": false,
-      "isConnectedTasksVisible": false,
-      "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
-      "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
-      ],
-      "taskID": 12
-    },
-    {
-      "isOptionsVisible": false,
-      "isCommentsVisible": false,
-      "isConnectedTasksVisible": false,
-      "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
-      "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
-      ],
-      "taskID": 13
-    },
-    {
-      "isOptionsVisible": false,
-      "isCommentsVisible": false,
-      "isConnectedTasksVisible": false,
-      "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
-      "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
-      ],
-      "taskID": 14
-    },
-    {
-      "isOptionsVisible": false,
-      "isCommentsVisible": false,
-      "isConnectedTasksVisible": false,
-      "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
-      "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
-      ],
-      "taskID": 15
-    },
-    {
-      "isOptionsVisible": false,
-      "isCommentsVisible": false,
-      "isConnectedTasksVisible": false,
-      "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Secondary",
-      "taskDescription": "Conduct a training session",
-      "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Send reminders"
-      ],
-      "taskID": 16
-    },
-    {
-      "isOptionsVisible": false,
-      "isCommentsVisible": false,
-      "isConnectedTasksVisible": false,
-      "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
       "taskPriority": "Optional",
-      "taskDescription": "Complete HomeWork",
+      "taskDescription": "Test the new feature",
       "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
+        "Set up testing environment",
+        "Run tests",
+        "Document findings"
       ],
-      "taskID": 17
+      "taskID": 7314
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
+      "isEditingComment": false,
       "isTaskCompleted": true,
+      "isTaskDeleted": false,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Prepare meeting minutes",
+      "taskComments": [
+        "Record discussions",
+        "Summarize decisions",
+        "Distribute to participants"
+      ],
+      "taskID": 5567
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Main",
+      "taskDescription": "Evaluate supplier contracts",
+      "taskComments": [
+        "Review terms",
+        "Compare prices",
+        "Make recommendations"
+      ],
+      "taskID": 8793
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": true,
       "taskPriority": "Secondary",
-      "taskDescription": "Sort out Daily Tasks",
+      "taskDescription": "Organize team building activity",
       "taskComments": [
-        "Schedule a time",
-        "Send reminders"
+        "Choose an activity",
+        "Set a budget",
+        "Plan logistics"
       ],
-      "taskID": 18
+      "taskID": 6738
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Optional",
+      "taskDescription": "Redesign the newsletter",
       "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
+        "Gather feedback",
+        "Create a new layout",
+        "Implement changes"
       ],
-      "taskID": 19
+      "taskID": 3214
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
       "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
+      "taskDescription": "Backup the database",
       "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
+        "Schedule backup",
+        "Test recovery process",
+        "Document procedure"
       ],
-      "taskID": 20
+      "taskID": 2526
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": true,
+      "taskPriority": "Main",
+      "taskDescription": "Prepare the project timeline",
       "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
+        "Identify milestones",
+        "Set deadlines",
+        "Assign responsibilities"
       ],
-      "taskID": 21
+      "taskID": 6785
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Secondary",
+      "taskDescription": "Update client records",
       "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
+        "Verify information",
+        "Make necessary changes",
+        "Document updates"
       ],
-      "taskID": 22
+      "taskID": 9846
     },
     {
       "isOptionsVisible": false,
       "isCommentsVisible": false,
       "isConnectedTasksVisible": false,
       "isEditingTasksVisible": false,
-      "isTaskCompleted": true,
-      "taskPriority": "Tertiary",
-      "taskDescription": "Finish the Project Plan",
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Optional",
+      "taskDescription": "Plan the annual retreat",
       "taskComments": [
-        "Prepare training materials",
-        "Schedule a time",
-        "Schedule a time",
-        "Schedule a time",
-        "Send reminders"
+        "Select location",
+        "Create an itinerary",
+        "Send invitations"
       ],
-      "taskID": 23
+      "taskID": 4150
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Analyze survey results",
+      "taskComments": [
+        "Compile data",
+        "Identify trends",
+        "Prepare a summary report"
+      ],
+      "taskID": 7363
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Main",
+      "taskDescription": "Create a training schedule",
+      "taskComments": [
+        "Identify topics",
+        "Select trainers",
+        "Set dates"
+      ],
+      "taskID": 2595
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": true,
+      "isTaskDeleted": false,
+      "taskPriority": "Secondary",
+      "taskDescription": "Revise the employee handbook",
+      "taskComments": [
+        "Gather input from staff",
+        "Update policies",
+        "Publish revisions"
+      ],
+      "taskID": 4803
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Optional",
+      "taskDescription": "Conduct market research",
+      "taskComments": [
+        "Define objectives",
+        "Select research methods",
+        "Analyze findings"
+      ],
+      "taskID": 7531
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Evaluate feedback from the team",
+      "taskComments": [
+        "Collect responses",
+        "Identify common themes",
+        "Present findings"
+      ],
+      "taskID": 3179
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Main",
+      "taskDescription": "Prepare presentation for stakeholders",
+      "taskComments": [
+        "Gather data",
+        "Create slides",
+        "Rehearse presentation"
+      ],
+      "taskID": 8647
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Secondary",
+      "taskDescription": "Create a risk assessment plan",
+      "taskComments": [
+        "Identify potential risks",
+        "Evaluate impact",
+        "Develop mitigation strategies"
+      ],
+      "taskID": 9401
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": true,
+      "taskPriority": "Optional",
+      "taskDescription": "Update training materials",
+      "taskComments": [
+        "Gather current materials",
+        "Make necessary updates",
+        "Distribute new materials"
+      ],
+      "taskID": 8059
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Draft a new policy document",
+      "taskComments": [
+        "Research best practices",
+        "Gather input from stakeholders",
+        "Finalize the document"
+      ],
+      "taskID": 4936
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Main",
+      "taskDescription": "Schedule team meetings",
+      "taskComments": [
+        "Determine frequency",
+        "Select participants",
+        "Send calendar invites"
+      ],
+      "taskID": 8237
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Secondary",
+      "taskDescription": "Analyze department performance metrics",
+      "taskComments": [
+        "Gather data",
+        "Identify trends",
+        "Prepare a report"
+      ],
+      "taskID": 6491
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Optional",
+      "taskDescription": "Implement new software",
+      "taskComments": [
+        "Install the software",
+        "Train staff",
+        "Monitor usage"
+      ],
+      "taskID": 6783
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Plan the next marketing campaign",
+      "taskComments": [
+        "Identify target audience",
+        "Develop messaging",
+        "Create a budget"
+      ],
+      "taskID": 7514
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": true,
+      "isTaskDeleted": false,
+      "taskPriority": "Main",
+      "taskDescription": "Prepare for annual review",
+      "taskComments": [
+        "Gather documentation",
+        "Schedule review meeting",
+        "Prepare presentation"
+      ],
+      "taskID": 9740
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Secondary",
+      "taskDescription": "Review employee performance evaluations",
+      "taskComments": [
+        "Gather evaluations",
+        "Prepare feedback",
+        "Schedule meetings"
+      ],
+      "taskID": 1375
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Optional",
+      "taskDescription": "Conduct exit interviews",
+      "taskComments": [
+        "Schedule interviews",
+        "Prepare questions",
+        "Document feedback"
+      ],
+      "taskID": 3918
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Draft a communication plan",
+      "taskComments": [
+        "Identify key stakeholders",
+        "Determine communication methods",
+        "Create a timeline"
+      ],
+      "taskID": 1620
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Main",
+      "taskDescription": "Set up performance reviews",
+      "taskComments": [
+        "Determine criteria",
+        "Schedule meetings",
+        "Prepare materials"
+      ],
+      "taskID": 7049
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Secondary",
+      "taskDescription": "Create a social media strategy",
+      "taskComments": [
+        "Research best practices",
+        "Define goals",
+        "Draft content plan"
+      ],
+      "taskID": 8926
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": false,
+      "taskPriority": "Optional",
+      "taskDescription": "Assess training needs",
+      "taskComments": [
+        "Gather input from staff",
+        "Analyze skills gaps",
+        "Create a training plan"
+      ],
+      "taskID": 1305
+    },
+    {
+      "isOptionsVisible": false,
+      "isCommentsVisible": false,
+      "isConnectedTasksVisible": false,
+      "isEditingTasksVisible": false,
+      "isEditingComment": false,
+      "isTaskCompleted": false,
+      "isTaskDeleted": true,
+      "taskPriority": "Tertiary",
+      "taskDescription": "Review project timelines",
+      "taskComments": [
+        "Identify delays",
+        "Adjust schedules",
+        "Communicate changes"
+      ],
+      "taskID": 2995
     }
   ]
 }

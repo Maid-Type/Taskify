@@ -1,0 +1,9 @@
+.container {
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: -2px 1px 25px 1px rgba(0, 0, 0, 0.15);
+    background: rgb(2,0,36);
+    color: #343434;
+    background: linear-gradient(145deg, rgb(234, 234, 255) 0%, rgb(238, 229, 229) 64%, rgb(238, 234, 234) 99%, rgba(217, 214, 214, 0.14) 100%);
+}

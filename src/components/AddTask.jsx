@@ -10,9 +10,10 @@ function AddTask({ handleAddTask, handleExitAddTask, className,tasksArray }) {
         isEditingTasksVisible: false,
         isEditingComment: false,
         isTaskCompleted: false,
+        isTaskDeleted: false,
         taskPriority: "",
         taskDescription: "",
-        taskComments: [''],
+        taskComments: [],
         taskID: tasksArray.length + 1,
     };
 
@@ -33,7 +34,7 @@ function AddTask({ handleAddTask, handleExitAddTask, className,tasksArray }) {
             handleExitAddTask();
         }
         if (event.key === 'Enter') {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault();
             handleTask();
         }
     }
@@ -49,7 +50,6 @@ function AddTask({ handleAddTask, handleExitAddTask, className,tasksArray }) {
         const { taskPriority, taskDescription, taskComments } = deepCopy;
 
         if (taskPriority && taskDescription) {
-            // Handle comments logic separately
             if (taskComments[0] === '') {
                 setDeepCopy((prevState) => ({
                     ...prevState,
@@ -63,7 +63,6 @@ function AddTask({ handleAddTask, handleExitAddTask, className,tasksArray }) {
                 }));
             }
 
-            // After setting state, we can now add the task
             addTask();
         } else {
             setError('Please input all details about your task!');
