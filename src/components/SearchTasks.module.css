@@ -86,7 +86,7 @@
     background-color: rgba(0, 0, 0, 0.02);
 }
 
-p {
+.container p {
     position: absolute;
     left: 50%;
     top: 50%;
